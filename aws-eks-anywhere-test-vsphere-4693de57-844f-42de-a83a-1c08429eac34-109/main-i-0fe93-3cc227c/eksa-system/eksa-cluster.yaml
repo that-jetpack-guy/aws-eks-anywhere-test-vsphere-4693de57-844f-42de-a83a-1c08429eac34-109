@@ -2,7 +2,6 @@ apiVersion: anywhere.eks.amazonaws.com/v1alpha1
 kind: Cluster
 metadata:
   annotations:
-    anywhere.eks.amazonaws.com/managed-by-cli: "true"
     anywhere.eks.amazonaws.com/management-components-version: v0.20.0-dev+build.22
   name: main-i-0fe93-3cc227c
   namespace: default
@@ -37,7 +36,7 @@ spec:
   gitOpsRef:
     kind: FluxConfig
     name: eksa-test
-  kubernetesVersion: "1.28"
+  kubernetesVersion: "1.29"
   machineHealthCheck:
     maxUnhealthy: 100%
     nodeStartupTimeout: 10m0s
@@ -83,7 +82,7 @@ spec:
   numCPUs: 2
   osFamily: ubuntu
   resourcePool: /SDDC-Datacenter/host/Cluster-1/Resources/Compute-ResourcePool
-  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-28-eks-15-ubuntu
+  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-29-eks-4-ubuntu
   users:
   - name: ec2-user
     sshAuthorizedKeys:
@@ -105,7 +104,7 @@ spec:
   numCPUs: 2
   osFamily: ubuntu
   resourcePool: /SDDC-Datacenter/host/Cluster-1/Resources/Compute-ResourcePool
-  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-28-eks-15-ubuntu
+  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-29-eks-4-ubuntu
   users:
   - name: ec2-user
     sshAuthorizedKeys:
@@ -129,7 +128,7 @@ spec:
   numCPUs: 2
   osFamily: ubuntu
   resourcePool: /SDDC-Datacenter/host/Cluster-1/Resources/Compute-ResourcePool
-  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-28-eks-15-ubuntu
+  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-29-eks-4-ubuntu
   users:
   - name: ec2-user
     sshAuthorizedKeys:
